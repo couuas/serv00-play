@@ -32,5 +32,5 @@ jobs:
           LOGININFO: ${{vars.LOGININFO}}
           TOKEN: ${{secrets.TOKEN}}
         run: |
-          chmod +x ./revive_node_s.sh
-          ./revive_node_s.sh
+          chmod +x ./save_node.sh
+          ./save_node.sh
