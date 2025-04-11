@@ -31,7 +31,7 @@ for info in "${nodes_info[@]}"; do
 
   echo "host: $host"
   bas64_pass=$(toBase64 $pass)
-  output=$(curl -s -o /dev/null -w "%{http_code}" "https://${user}.serv00.net/info")
+  output=$(curl -s -o /dev/null -w "%{http_code}" "https://${user}.serv00.net")
 
   if [ "$output" -eq 200 ]; then
     echo "连接成功，账号正常"
